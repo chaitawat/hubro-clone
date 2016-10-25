@@ -1,0 +1,30 @@
+"communicate": [
+    {
+        "_id": "1",
+        "type": "post",
+        "topic": "Test Post",
+        "data": {
+
+        },
+        "receiver": [
+            {},{}
+        ],
+        "attach": [
+            {},{}
+        ],
+        "createdBy": {
+            "userId": "1234",
+            "date": 132423412341,
+        },
+        "updatedBy": {
+            "userId": "1234",
+            "date": 132423412341,
+            "message": ""
+        },
+        "removedBy": {
+            "userId": "1234",
+            "date": 132423412341,
+            "message": ""
+        }
+    }
+]

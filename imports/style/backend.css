@@ -1,0 +1,279 @@
+html {
+  height: 100%;
+}
+body {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     min-height: 100%;
+     border: none;
+     margin: 0;
+     background-color: #F5F5F5;
+
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 16px;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ #app {
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+
+ .shadow-d1 {
+     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+ }
+ .shadow-d2 {
+     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ }
+ .shadow-d3 {
+     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+ }
+ .shadow-d4 {
+     box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+ }
+ .shadow-d5 {
+     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+ }
+
+ /* Util ------------------------------------------------------------------- */
+.animation {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.visible {
+    visibility: visible;
+}
+.invisible {
+    visibility: hidden;
+    transform: scale(0.4);
+}
+
+ .vcenter {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+ .inline {
+     display: inline-block;
+ }
+
+ .m4 {
+     margin: 4px;
+ }
+ .m8 {
+     margin: 8px;
+ }
+ .m16 {
+     margin: 16px;
+ }
+ .m24 {
+     margin: 24px;
+ }
+ .m32 {
+     margin: 32px;
+ }
+
+ .mtop4 {
+     margin-top: 4px;
+ }
+ .mtop8 {
+     margin-top: 8px;
+ }
+ .mtop16 {
+     margin-top: 16px;
+ }
+ .mtop24 {
+     margin-top: 24px;
+ }
+ .mtop32 {
+     margin-top: 32px;
+ }
+
+ .mleft4 {
+     margin-left: 4px;
+ }
+ .mleft8 {
+     margin-left: 8px;
+ }
+ .mleft16 {
+     margin-left: 16px;
+ }
+ .mleft24 {
+     margin-left: 24px;
+ }
+ .mleft32 {
+     margin-left: 32px;
+ }
+
+ .mright4 {
+     margin-right: 4px;
+ }
+ .mright8 {
+     margin-right: 8px;
+ }
+ .mright16 {
+     margin-right: 16px;
+ }
+ .mright24 {
+     margin-right: 24px;
+ }
+ .mright32 {
+     margin-right: 32px;
+ }
+
+
+ .app {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+ }
+
+.appbar {
+    margin: -16px -16px 20px -16px;
+    width: calc(100% + 32px);
+    height: 64px;
+    color: #FAFAFA;
+    background-color: #2196F3;  /* Blue-500 */
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+}
+
+.profilebar {
+    position: relative;
+    width: clac(100% + 32px);
+    height: 144px;
+    margin: -16px;
+    background-color: #2196F3;  /* Blue-500 */
+}
+
+ .fab {
+     position: fixed;
+     right: calc(-56px - 32px);
+     top: 112px;
+ }
+
+/* Layout Header ------------------------------------------------------------ */
+.head {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 232px;
+    background-color: #039BE5;  /* LightBlue-600 */
+}
+.head-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.head-logo {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+}
+.head-logo > img {
+    width: 128px;
+}
+.head-nav {
+    position: absolute;
+    top: 56px;
+    left: 296px;
+    color: #FAFAFA; /* Grey-50 */
+}
+.head-lang {
+    position: absolute;
+    top: 8px;
+    right: 48px;
+    cursor: pointer;
+}
+.head-logout {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+/* Layout Menu ------------------------------------------------------------ */
+.menu {
+    position: absolute;
+    top: 88px;
+    left: 0px;
+    width: 296px;
+    height: calc(100% - 72px);
+}
+.menu-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.menu-user-avatar {
+    position: absolute;
+    left: 24px;
+    top: 0px;
+}
+.menu-user-name {
+    position: absolute;
+    left: 24px;
+    top: 72px;
+    color: #FAFAFA; /* Grey-50 */
+}
+.menu-user-email {
+    position: absolute;
+    left: 24px;
+    top: 96px;
+    color: #FAFAFA; /* Grey-50 */
+    font-size: 14px;
+}
+.menu-items {
+    position: absolute;
+    left: 8px;
+    top: 144px;
+    width: calc(100% - 16px);
+    overflow-y: scroll;
+    height: calc(100% - 144px - 24px);
+}
+
+
+/* Layout Body & Page ------------------------------------------------------------ */
+.body {
+    position: absolute;
+    top: 88px;
+    left: 296px;
+    width: calc(100% - 296px - 64px);
+    height: calc(100% - 120px);
+}
+
+.body > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+ .body > div > div {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ }
+
+.page {
+    position: absolute;
+    padding: 16px;
+    width: calc(100% - 32px);
+    height: calc(100% - 32px);
+    overflow: hidden;
+    color: #424242; /* Grey-800 */
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    background: #FFF;
+    border-radius: 2px;
+}
